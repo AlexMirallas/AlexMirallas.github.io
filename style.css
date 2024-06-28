@@ -4,3 +4,10 @@ body{
     size: 30px;
     justify-content: center;
 }
+h1{
+    color: red;
+}
+img{
+    width: 200px;
+    height: 200px;
+}

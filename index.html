@@ -3,11 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" robots" content=" index, follow">
+    <meta name="description" content="Explorez de magnifiques photos d'oiseaux, des aigles majestueux aux oiseaux chanteurs colorés. Découvrez des conseils, des anecdotes et une galerie de magnifiques images d'oiseaux.">
+    <title>Mon blog de photos d'oiseaux</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Love You</title>
 </head>
 <body>
-    <h1>I love You</h1>
-    <img src="./resources/images/heart.png">
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MonBlog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section1">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#form-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid justify-content-center " id="section1">
+            <div class="row m-5 justify-content-center">
+                <div class="col-12">
+                    <h1 class="text-center fw-bold">PHOTOS D'OISEAUX</h1>
+                    <h3 class="text-center text-secondary fs-light">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row m-md-5 justify-content-center">
+                <div class="card mt-4" style="width: 22rem;" data-bs-toggle="modal" data-bs-target="#sunrise">
+                    <img src="./img/a.jpg" alt="un photo du lever du soleil" height="100%" class="card-img-top">
+                    <div class="card-body text-start">
+                        <h5 class="card-text">Sunrise</h5>
+                        <p class="text-secondary card-text">Photography</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 22rem;" data-bs-toggle="modal" data-bs-target="#mesange">
+                    <img src="./img/b.jpg" alt="une image d'une mésange" height="220" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-text">Mésange</h5>
+                        <p class="text-secondary card-text">Photography</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 22rem;" data-bs-toggle="modal" data-bs-target="#faucon">
+                    <img src="./img/c.jpg" alt="une image d'une faucon" height="220" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-text">Faucon</h5>
+                        <p class="text-secondary card-text">Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-md-5 justify-content-center">
+                <div class="card mt-4" style="width: 22rem;" data-bs-toggle="modal" data-bs-target="#martin-pecheur">
+                    <img src="./img/d.jpg" alt="une image d'une martin pecheur" height="220" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-text">Martin-pêcheur</h5>
+                        <p class="text-secondary card-text">Photography</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 22rem;" data-bs-toggle="modal" data-bs-target="#sunset">
+                    <img src="./img/e.jpg" alt="photo de coucher de soleil avec des oiseaux" height="220" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-text">Sunset</h5>
+                        <p class="text-secondary card-text">Photography</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 22rem;" data-bs-toggle="modal" data-bs-target="#colibrie">
+                    <img src="./img/f.jpg" alt="une image d'une colibrie" height="220" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-text">Colibrie</h5>
+                        <p class="text-secondary card-text">Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-md-5" id="form-section">
+            <div class="row p-md-5" id="formrow1">
+                <div class="col-12 mt-5">
+                    <h2 class="text-center text-light mt-md-5">CONTACT US</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 offset-2 col-md-4 offset-md-2">
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control py-3" placeholder="Name *">
+                    </div>
+                    <div class="input-group mb-4">
+                        <input type="email" class="form-control py-3" placeholder="Email *">
+                    </div>
+                    <div class="input-group mb-4">
+                        <input type="tel" class="form-control py-3" placeholder="Phone *">
+                    </div>
+                </div>
+                <div class="col-8 offset-2 offset-md-0 col-md-4">
+                    <div class="input-group">
+                        <textarea name="" id="" class="form-control py-3" rows="8" placeholder="Message *"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 d-flex justify-content-center">
+                    <button id="sendMessage" class="btn btn-success disabled">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid py-4">
+            <div class="row text-center">
+                <div class="col-12 col-md-2">
+                    <span>Copyright &copy Qlex</span>
+                </div>
+                <div class="col-12 mt-2 mt-md-0 col-md-8">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="text-decoration-none" href="https://www.facebook.com/">
+                                <i class="bi bi-facebook fs-3 icons"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-decoration-none" href="https://x.com/">
+                                <i class="bi bi-twitter fs-3 icons"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-decoration-none" href="https://www.instagram.com/">
+                                <i class="bi bi-instagram fs-3 icons" ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals-->
+    <div class="modal fade" id="sunrise" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Sunrise</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                <img src="img/a.jpg" alt="sun rise picture" height="300" class="w-100">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore maxime soluta quas ad quibusdam. Voluptate, quam.
+                    Quis labore dolor iusto ipsum enim libero? Magnam, similique iusto. 
+                    Fugiat, assumenda. Vel, similique nisi cupiditate labore nemo aliquid 
+                    itaque officiis sunt impedit aspernatur vero nesciunt architecto 
+                    explicabo obcaecati quo, error alias. Sapiente officia voluptates 
+                    maxime est accusantium ducimus doloribus sint quibusdam alias. 
+                    Ad velit unde distinctio omnis dignissimos veritatis maxime totam 
+                    fugit sapiente placeat alias commodi architecto mollitia vel nostrum, 
+                    error dolorem autem a quis ducimus assumenda, cum veniam non deserunt. 
+                    Inventore officiis assumenda atque consectetur sed. Tempora eaque impedit 
+                    eos expedita suscipit iure labore, quae magni nostrum. Possimus excepturi 
+                    velit, facere corporis ipsum nulla ad reprehenderit eligendi totam debitis, 
+                    quisquam in pariatur dolorum ab tempora animi, ducimus voluptate dolor 
+                    nostrum incidunt? Error distinctio temporibus consequuntur asperiores cumque 
+                    nam repellat provident fugit, ipsam veritatis fugiat, dolor et, rem quae 
+                    voluptates ratione quas ex assumenda quia. Unde reprehenderit minus, asperiores 
+                    aliquid eum sint ratione, blanditiis doloremque officia sunt nam, fuga 
+                    omnis minima rerum quisquam cumque voluptatem. Inventore earum excepturi 
+                    repellat dolorem voluptas sint explicabo, adipisci vero, quas, ipsam beatae! 
+                    Eveniet vitae aperiam eaque odit? Qui exercitationem sunt, asperiores maiores 
+                    iure numquam obcaecati recusandae quo.</p>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mesange" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Mésange</h>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                <img src="img/b.jpg" alt="Mésange picture" height="300" class="w-100">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore maxime soluta quas ad quibusdam. Voluptate, quam.
+                    Quis labore dolor iusto ipsum enim libero? Magnam, similique iusto. 
+                    Fugiat, assumenda. Vel, similique nisi cupiditate labore nemo aliquid 
+                    itaque officiis sunt impedit aspernatur vero nesciunt architecto 
+                    explicabo obcaecati quo, error alias. Sapiente officia voluptates 
+                    maxime est accusantium ducimus doloribus sint quibusdam alias. 
+                    Ad velit unde distinctio omnis dignissimos veritatis maxime totam 
+                    fugit sapiente placeat alias commodi architecto mollitia vel nostrum, 
+                    error dolorem autem a quis ducimus assumenda, cum veniam non deserunt. 
+                    Inventore officiis assumenda atque consectetur sed. Tempora eaque impedit 
+                    eos expedita suscipit iure labore, quae magni nostrum. Possimus excepturi 
+                    velit, facere corporis ipsum nulla ad reprehenderit eligendi totam debitis, 
+                    quisquam in pariatur dolorum ab tempora animi, ducimus voluptate dolor 
+                    nostrum incidunt? Error distinctio temporibus consequuntur asperiores cumque 
+                    nam repellat provident fugit, ipsam veritatis fugiat, dolor et, rem quae 
+                    voluptates ratione quas ex assumenda quia. Unde reprehenderit minus, asperiores 
+                    aliquid eum sint ratione, blanditiis doloremque officia sunt nam, fuga 
+                    omnis minima rerum quisquam cumque voluptatem. Inventore earum excepturi 
+                    repellat dolorem voluptas sint explicabo, adipisci vero, quas, ipsam beatae! 
+                    Eveniet vitae aperiam eaque odit? Qui exercitationem sunt, asperiores maiores 
+                    iure numquam obcaecati recusandae quo.</p>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="faucon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Faucon</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                <img src="img/c.jpg" alt="faucon picture" height="300" class="w-100">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore maxime soluta quas ad quibusdam. Voluptate, quam.
+                    Quis labore dolor iusto ipsum enim libero? Magnam, similique iusto. 
+                    Fugiat, assumenda. Vel, similique nisi cupiditate labore nemo aliquid 
+                    itaque officiis sunt impedit aspernatur vero nesciunt architecto 
+                    explicabo obcaecati quo, error alias. Sapiente officia voluptates 
+                    maxime est accusantium ducimus doloribus sint quibusdam alias. 
+                    Ad velit unde distinctio omnis dignissimos veritatis maxime totam 
+                    fugit sapiente placeat alias commodi architecto mollitia vel nostrum, 
+                    error dolorem autem a quis ducimus assumenda, cum veniam non deserunt. 
+                    Inventore officiis assumenda atque consectetur sed. Tempora eaque impedit 
+                    eos expedita suscipit iure labore, quae magni nostrum. Possimus excepturi 
+                    velit, facere corporis ipsum nulla ad reprehenderit eligendi totam debitis, 
+                    quisquam in pariatur dolorum ab tempora animi, ducimus voluptate dolor 
+                    nostrum incidunt? Error distinctio temporibus consequuntur asperiores cumque 
+                    nam repellat provident fugit, ipsam veritatis fugiat, dolor et, rem quae 
+                    voluptates ratione quas ex assumenda quia. Unde reprehenderit minus, asperiores 
+                    aliquid eum sint ratione, blanditiis doloremque officia sunt nam, fuga 
+                    omnis minima rerum quisquam cumque voluptatem. Inventore earum excepturi 
+                    repellat dolorem voluptas sint explicabo, adipisci vero, quas, ipsam beatae! 
+                    Eveniet vitae aperiam eaque odit? Qui exercitationem sunt, asperiores maiores 
+                    iure numquam obcaecati recusandae quo.</p>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="martin-pecheur" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Martin-pêcheur</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                <img src="img/d.jpg" alt="martin-pecheur picture" height="300" class="w-100">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore maxime soluta quas ad quibusdam. Voluptate, quam.
+                    Quis labore dolor iusto ipsum enim libero? Magnam, similique iusto. 
+                    Fugiat, assumenda. Vel, similique nisi cupiditate labore nemo aliquid 
+                    itaque officiis sunt impedit aspernatur vero nesciunt architecto 
+                    explicabo obcaecati quo, error alias. Sapiente officia voluptates 
+                    maxime est accusantium ducimus doloribus sint quibusdam alias. 
+                    Ad velit unde distinctio omnis dignissimos veritatis maxime totam 
+                    fugit sapiente placeat alias commodi architecto mollitia vel nostrum, 
+                    error dolorem autem a quis ducimus assumenda, cum veniam non deserunt. 
+                    Inventore officiis assumenda atque consectetur sed. Tempora eaque impedit 
+                    eos expedita suscipit iure labore, quae magni nostrum. Possimus excepturi 
+                    velit, facere corporis ipsum nulla ad reprehenderit eligendi totam debitis, 
+                    quisquam in pariatur dolorum ab tempora animi, ducimus voluptate dolor 
+                    nostrum incidunt? Error distinctio temporibus consequuntur asperiores cumque 
+                    nam repellat provident fugit, ipsam veritatis fugiat, dolor et, rem quae 
+                    voluptates ratione quas ex assumenda quia. Unde reprehenderit minus, asperiores 
+                    aliquid eum sint ratione, blanditiis doloremque officia sunt nam, fuga 
+                    omnis minima rerum quisquam cumque voluptatem. Inventore earum excepturi 
+                    repellat dolorem voluptas sint explicabo, adipisci vero, quas, ipsam beatae! 
+                    Eveniet vitae aperiam eaque odit? Qui exercitationem sunt, asperiores maiores 
+                    iure numquam obcaecati recusandae quo.</p>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sunset" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Sunset</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                <img src="img/e.jpg" alt="sun set picture" height="300" class="w-100">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore maxime soluta quas ad quibusdam. Voluptate, quam.
+                    Quis labore dolor iusto ipsum enim libero? Magnam, similique iusto. 
+                    Fugiat, assumenda. Vel, similique nisi cupiditate labore nemo aliquid 
+                    itaque officiis sunt impedit aspernatur vero nesciunt architecto 
+                    explicabo obcaecati quo, error alias. Sapiente officia voluptates 
+                    maxime est accusantium ducimus doloribus sint quibusdam alias. 
+                    Ad velit unde distinctio omnis dignissimos veritatis maxime totam 
+                    fugit sapiente placeat alias commodi architecto mollitia vel nostrum, 
+                    error dolorem autem a quis ducimus assumenda, cum veniam non deserunt. 
+                    Inventore officiis assumenda atque consectetur sed. Tempora eaque impedit 
+                    eos expedita suscipit iure labore, quae magni nostrum. Possimus excepturi 
+                    velit, facere corporis ipsum nulla ad reprehenderit eligendi totam debitis, 
+                    quisquam in pariatur dolorum ab tempora animi, ducimus voluptate dolor 
+                    nostrum incidunt? Error distinctio temporibus consequuntur asperiores cumque 
+                    nam repellat provident fugit, ipsam veritatis fugiat, dolor et, rem quae 
+                    voluptates ratione quas ex assumenda quia. Unde reprehenderit minus, asperiores 
+                    aliquid eum sint ratione, blanditiis doloremque officia sunt nam, fuga 
+                    omnis minima rerum quisquam cumque voluptatem. Inventore earum excepturi 
+                    repellat dolorem voluptas sint explicabo, adipisci vero, quas, ipsam beatae! 
+                    Eveniet vitae aperiam eaque odit? Qui exercitationem sunt, asperiores maiores 
+                    iure numquam obcaecati recusandae quo.</p>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="colibrie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Colibrie</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                <img src="img/a.jpg" alt="colibrie picture" height="300" class="w-100">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore maxime soluta quas ad quibusdam. Voluptate, quam.
+                    Quis labore dolor iusto ipsum enim libero? Magnam, similique iusto. 
+                    Fugiat, assumenda. Vel, similique nisi cupiditate labore nemo aliquid 
+                    itaque officiis sunt impedit aspernatur vero nesciunt architecto 
+                    explicabo obcaecati quo, error alias. Sapiente officia voluptates 
+                    maxime est accusantium ducimus doloribus sint quibusdam alias. 
+                    Ad velit unde distinctio omnis dignissimos veritatis maxime totam 
+                    fugit sapiente placeat alias commodi architecto mollitia vel nostrum, 
+                    error dolorem autem a quis ducimus assumenda, cum veniam non deserunt. 
+                    Inventore officiis assumenda atque consectetur sed. Tempora eaque impedit 
+                    eos expedita suscipit iure labore, quae magni nostrum. Possimus excepturi 
+                    velit, facere corporis ipsum nulla ad reprehenderit eligendi totam debitis, 
+                    quisquam in pariatur dolorum ab tempora animi, ducimus voluptate dolor 
+                    nostrum incidunt? Error distinctio temporibus consequuntur asperiores cumque 
+                    nam repellat provident fugit, ipsam veritatis fugiat, dolor et, rem quae 
+                    voluptates ratione quas ex assumenda quia. Unde reprehenderit minus, asperiores 
+                    aliquid eum sint ratione, blanditiis doloremque officia sunt nam, fuga 
+                    omnis minima rerum quisquam cumque voluptatem. Inventore earum excepturi 
+                    repellat dolorem voluptas sint explicabo, adipisci vero, quas, ipsam beatae! 
+                    Eveniet vitae aperiam eaque odit? Qui exercitationem sunt, asperiores maiores 
+                    iure numquam obcaecati recusandae quo.</p>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

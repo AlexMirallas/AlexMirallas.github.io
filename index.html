@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=" robots" content=" index, follow">
+    <meta name="robots" content=" index, follow">
     <meta name="description" content="Explorez de magnifiques photos d'oiseaux, des aigles majestueux aux oiseaux chanteurs colorés. Découvrez des conseils, des anecdotes et une galerie de magnifiques images d'oiseaux.">
     <title>Mon blog de photos d'oiseaux</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -44,7 +44,7 @@
             </div>
             <div class="row m-md-5 justify-content-center">
                 <div class="card mt-4" style="width: 22rem;" data-bs-toggle="modal" data-bs-target="#sunrise">
-                    <img src="./img/a.jpg" alt="un photo du lever du soleil" height="100%" class="card-img-top">
+                    <img src="./img/a.jpg" alt="un photo du lever du soleil" height="220" class="card-img-top">
                     <div class="card-body text-start">
                         <h5 class="card-text">Lever du soleil</h5>
                         <p class="text-secondary card-text">France</p>
@@ -98,18 +98,18 @@
             <div class="row">
                 <div class="col-8 offset-2 col-md-4 offset-md-2">
                     <div class="input-group mb-4">
-                        <input type="text" class="form-control py-3" placeholder="Name *">
+                        <input type="text" class="form-control py-3" placeholder="Name *" aria-label="Name">
                     </div>
                     <div class="input-group mb-4">
-                        <input type="email" class="form-control py-3" placeholder="Email *">
+                        <input type="email" class="form-control py-3" placeholder="Email *" aria-label="Email">
                     </div>
                     <div class="input-group mb-4">
-                        <input type="tel" class="form-control py-3" placeholder="Phone *">
+                        <input type="tel" class="form-control py-3" placeholder="Phone *" aria-label="Phone">
                     </div>
                 </div>
                 <div class="col-8 offset-2 offset-md-0 col-md-4">
                     <div class="input-group">
-                        <textarea name="" id="" class="form-control py-3" rows="8" placeholder="Message *"></textarea>
+                        <textarea name="message" id="message" class="form-control py-3" rows="8" placeholder="Message *" aria-label="Message"></textarea>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
         <div class="container-fluid py-4">
             <div class="row text-center">
                 <div class="col-12 col-md-2">
-                    <span>Copyright &copy Qlex</span>
+                    <span>Copyright &copy; Qlex</span>
                 </div>
                 <div class="col-12 mt-2 mt-md-0 col-md-8">
                     <ul class="list-inline">
@@ -150,16 +150,16 @@
     </footer>
 
     <!-- Modals-->
-    <div class="modal fade" id="sunrise" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="sunrise" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sunriseModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Sunrise</h2>
+                    <h2 class="modal-title fs-5" id="sunriseModal">Sunrise</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            <div class="modal-body">
-                <img src="img/a.jpg" alt="sun rise picture" height="300" class="w-100">
-                <p>es plumes cramoisies captaient la lumière du soleil, 
+                <div class="modal-body">
+                    <img src="img/a.jpg" alt="sun rise picture" height="300" class="w-100">
+                        <p>Les plumes cramoisies captaient la lumière du soleil, 
                     contraste saisissant avec le vert sourd de la canopée
                     forestière. Un trille mélodieux et lointain résonnait,
                     signature d'un oiseau chanteur reclus. Au-dessus, une 
@@ -171,8 +171,8 @@
                     de comportements complexes et d'une symphonie infinie 
                     de sons. Leur résilience et leur adaptabilité sont 
                     vraiment remarquables, source constante d'émerveillement.
-                </p>
-            </div>
+                        </p>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
@@ -180,16 +180,16 @@
         </div>
     </div>
 
-    <div class="modal fade" id="mesange" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="mesange" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mesangeModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Mésange</h>
+                    <h2 class="modal-title fs-5" id="mesangeModal">Mésange</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            <div class="modal-body">
-                <img src="img/b.jpg" alt="Mésange picture" height="300" class="w-100">
-                <p>
+                <div class="modal-body">
+                    <img src="img/b.jpg" alt="Mésange picture" height="300" class="w-100">
+                    <p>
                     Des plumes cramoisies captaient la lumière tamisée du soleil filtrant à travers
                     la dense canopée forestière, un contraste saisissant et époustouflant avec les
                     verts et bruns discrets des arbres centenaires. Un trille mélodieux, complexe 
@@ -210,8 +210,8 @@
                     remarquable, leurs adaptations évolutives et leur beauté pure sont une 
                     source constante d'émerveillement et d'inspiration pour ceux qui prennent 
                     le temps de les observer attentivement dans leurs habitats naturels.
-                </p>
-            </div>
+                    </p>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
@@ -219,16 +219,16 @@
         </div>
     </div>
 
-    <div class="modal fade" id="faucon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="faucon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fauconModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Faucon</h2>
+                    <h2 class="modal-title fs-5" id="fauconModal">Faucon</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            <div class="modal-body">
-                <img src="img/c.jpg" alt="faucon picture" height="300" class="w-100">
-                <p>Des plumes cramoisies captaient la lumière tamisée du soleil filtrant à travers
+                <div class="modal-body">
+                    <img src="img/c.jpg" alt="faucon picture" height="300" class="w-100">
+                    <p>Des plumes cramoisies captaient la lumière tamisée du soleil filtrant à travers
                     la dense canopée forestière, un contraste saisissant et époustouflant avec les
                     verts et bruns discrets des arbres centenaires. Un trille mélodieux, complexe 
                     et lointain, résonnait à travers le sous-bois, signature indubitable d'un 
@@ -248,7 +248,7 @@
                     remarquable, leurs adaptations évolutives et leur beauté pure sont une 
                     source constante d'émerveillement et d'inspiration pour ceux qui prennent 
                     le temps de les observer attentivement dans leurs habitats naturels.</p>
-            </div>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
@@ -256,16 +256,16 @@
         </div>
     </div>
 
-    <div class="modal fade" id="martin-pecheur" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="martin-pecheur" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="martinModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Martin-pêcheur</h2>
+                    <h2 class="modal-title fs-5" id="martinModal">Martin-pêcheur</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            <div class="modal-body">
-                <img src="img/d.jpg" alt="martin-pecheur picture" height="300" class="w-100">
-                <p>Des plumes cramoisies captaient la lumière tamisée du soleil filtrant à travers
+                <div class="modal-body">
+                    <img src="img/d.jpg" alt="martin-pecheur picture" height="300" class="w-100">
+                    <p>Des plumes cramoisies captaient la lumière tamisée du soleil filtrant à travers
                     la dense canopée forestière, un contraste saisissant et époustouflant avec les
                     verts et bruns discrets des arbres centenaires. Un trille mélodieux, complexe 
                     et lointain, résonnait à travers le sous-bois, signature indubitable d'un 
@@ -284,8 +284,9 @@
                     et d'une symphonie infinie et captivante de sons uniques. Leur résilience 
                     remarquable, leurs adaptations évolutives et leur beauté pure sont une 
                     source constante d'émerveillement et d'inspiration pour ceux qui prennent 
-                    le temps de les observer attentivement dans leurs habitats naturels.</p>
-            </div>
+                    le temps de les observer attentivement dans leurs habitats naturels.
+                    </p>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
@@ -293,16 +294,16 @@
         </div>
     </div>
 
-    <div class="modal fade" id="sunset" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="sunset" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sunsetModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Sunset</h2>
+                    <h2 class="modal-title fs-5" id="sunsetModal">Sunset</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            <div class="modal-body">
-                <img src="img/e.jpg" alt="sun set picture" height="300" class="w-100">
-                <p>Des plumes cramoisies captaient la lumière tamisée du soleil filtrant à travers
+                <div class="modal-body">
+                    <img src="img/e.jpg" alt="sun set picture" height="300" class="w-100">
+                    <p>Des plumes cramoisies captaient la lumière tamisée du soleil filtrant à travers
                     la dense canopée forestière, un contraste saisissant et époustouflant avec les
                     verts et bruns discrets des arbres centenaires. Un trille mélodieux, complexe 
                     et lointain, résonnait à travers le sous-bois, signature indubitable d'un 
@@ -321,8 +322,9 @@
                     et d'une symphonie infinie et captivante de sons uniques. Leur résilience 
                     remarquable, leurs adaptations évolutives et leur beauté pure sont une 
                     source constante d'émerveillement et d'inspiration pour ceux qui prennent 
-                    le temps de les observer attentivement dans leurs habitats naturels.</p>
-            </div>
+                    le temps de les observer attentivement dans leurs habitats naturels.
+                    </p>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
@@ -330,16 +332,16 @@
         </div>
     </div>
 
-    <div class="modal fade" id="colibrie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="colibrie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="colibrieModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Colibrie</h2>
+                    <h2 class="modal-title fs-5" id="colibrieModal">Colibrie</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            <div class="modal-body">
-                <img src="img/a.jpg" alt="colibrie picture" height="300" class="w-100">
-                <p>Des plumes cramoisies captaient la lumière tamisée du soleil filtrant à travers
+                <div class="modal-body">
+                    <img src="img/a.jpg" alt="colibrie picture" height="300" class="w-100">
+                    <p>Des plumes cramoisies captaient la lumière tamisée du soleil filtrant à travers
                     la dense canopée forestière, un contraste saisissant et époustouflant avec les
                     verts et bruns discrets des arbres centenaires. Un trille mélodieux, complexe 
                     et lointain, résonnait à travers le sous-bois, signature indubitable d'un 
@@ -358,8 +360,9 @@
                     et d'une symphonie infinie et captivante de sons uniques. Leur résilience 
                     remarquable, leurs adaptations évolutives et leur beauté pure sont une 
                     source constante d'émerveillement et d'inspiration pour ceux qui prennent 
-                    le temps de les observer attentivement dans leurs habitats naturels.</p>
-            </div>
+                    le temps de les observer attentivement dans leurs habitats naturels.
+                    </p>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
